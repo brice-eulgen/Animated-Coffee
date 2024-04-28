@@ -1,0 +1,25 @@
+# This is my comment
+
+# myapp:
+#   service:  myproject
+#   test: script1
+#   test1 : script2
+#   myarray:
+#     - 1
+#     - 2
+#     - 3
+#     - key1: value1
+#       keyrandom:  randomvalue1
+#     - key2: value2
+
+# myservice: my name is gen, i'm 22 years old
+#   i want to learn how CI/CD works
+
+name: My First Github Action
+on:  [push]
+jobs:
+  print-hello-world:
+    runs-on:  ubuntu-latest
+    steps:
+      - run: echo "hello world!!!"
+      - run: echo "This is step number 2"
